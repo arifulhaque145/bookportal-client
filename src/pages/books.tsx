@@ -39,9 +39,7 @@ const Books: React.FC<HomePageProps> = ({ selectedGenre }) => {
     },
   ];
 
-  const Books = selectedGenre
-    ? books.filter((book) => book.genre === selectedGenre)
-    : books;
+  selectedGenre ? books.filter((book) => book.genre === selectedGenre) : books;
 
   return (
     <div>

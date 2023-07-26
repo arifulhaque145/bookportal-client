@@ -10,7 +10,7 @@ const FilterContainer: React.FC = () => {
     // Add more book data here with different genres
   ];
 
-  const [filteredGenres, setFilteredGenres] = useState<string[]>([]);
+  const [, setFilteredGenres] = useState<string[]>([]);
   const [filteredBooks, setFilteredBooks] = useState(booksData);
 
   const handleFilterChange = (selectedGenres: string[]) => {
